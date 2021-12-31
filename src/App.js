@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Registro from './pages/Registro';
 import Index from './pages/Privado/index';
 import Vehiculo from './pages/Privado/vehiculo';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Publico from './layout/publico'
 import Privado from './layout/privado';
 import {Auth0Provider} from '@auth0/auth0-react';

@@ -1,4 +1,4 @@
-//import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid';
 import React from 'react'
 import { useEffect, useState, useRef } from 'react'  //capturar acciones
 import { ToastContainer, toast } from 'react-toastify';
@@ -72,7 +72,7 @@ const TablaVehiculos = ({ listaVehiculos }) => {
             <tbody>
                 {listaVehiculos.map((vehiculo) => {
                     return (
-                        <tr key={vehiculo._id}>
+                        <tr key={nanoid()}>
                             <td>{vehiculo.name}</td>
                             <td>{vehiculo.marca}</td>
                         </tr>

@@ -116,7 +116,7 @@ const Index = () => {
                 <tbody>
                     {listaVehiculoss.map((vehiculo) => {
                         return (
-                            <tr key={nanoid()}>
+                            <tr>
                                 <td>{vehiculo.name}</td>
                                 <td>{vehiculo.marca}</td>
                             </tr>
