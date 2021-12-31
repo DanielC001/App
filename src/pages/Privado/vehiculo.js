@@ -72,7 +72,7 @@ const TablaVehiculos = ({ listaVehiculos }) => {
             <tbody>
                 {listaVehiculos.map((vehiculo) => {
                     return (
-                        <tr key={nanoid()}>
+                        <tr key={vehiculo._id}>
                             <td>{vehiculo.name}</td>
                             <td>{vehiculo.marca}</td>
                         </tr>
