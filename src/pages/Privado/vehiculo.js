@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid';
+//import { nanoid } from 'nanoid';
 import React from 'react'
 import { useEffect, useState, useRef } from 'react'  //capturar acciones
 import { ToastContainer, toast } from 'react-toastify';
