@@ -24,6 +24,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <button className="btn btn-success me-2"  type="button" onClick={()=>logout()} >Cerrar Sesion auth</button>
                             </li>
+                            <li className="nav-item">
+                                <button className="btn btn-success me-2"  type="button" >boton</button>
+                            </li>
                         </ul>
                         <form className="d-flex">
                             <Link to='/registro'>
