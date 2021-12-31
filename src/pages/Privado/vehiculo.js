@@ -48,7 +48,7 @@ const Vehiculos = () => {
             <input type="text" placeholder='Marca' />
             <input type="text" placeholder='Modelo' />
             <button type="button" onClick={cambiar} className={colorBoton}>{textoBoton}</button>
-            {mostrarTabla ? <TablaVehiculos listaVehiculos={vehiculos}/> : <FormularioCreacionVehiculos
+            {mostrarTabla ? <TablaVehiculos listaVehiculos={vehiculos} /> : <FormularioCreacionVehiculos
                 setMostrarTabla={setMostrarTabla} setVehiculos={setVehiculos} listaVehiculos={vehiculos}
             />}
             <ToastContainer position='bottom-center' autoClose={5000} />
@@ -62,24 +62,26 @@ const TablaVehiculos = ({ listaVehiculos }) => {
     }, [listaVehiculos]);
 
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Marca</th>
-                </tr>
-            </thead>
-            <tbody>
-                {listaVehiculos.map((vehiculo) => {
-                    return (
-                        <tr key={nanoid()}>
-                            <td>{vehiculo.name}</td>
-                            <td>{vehiculo.marca}</td>
-                        </tr>
-                    );
-                })}
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table className="table table-striped table-hover">
+                <thead className="table-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {listaVehiculos.map((vehiculo) => {
+                        return (
+                            <tr key={nanoid()}>
+                                <td>{vehiculo.name}</td>
+                                <td>{vehiculo.marca}</td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+        </div>
     );
 }
 
