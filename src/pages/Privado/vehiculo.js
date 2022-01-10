@@ -16,7 +16,7 @@ const Vehiculos = () => {
 
     useEffect(() => {
         const obtenerVeh = async () => {
-            const options = { method: 'GET', url: 'https://lit-caverns-69036.herokuapp.com//vehiculos/' };
+            const options = { method: 'GET', url: 'https://lit-caverns-69036.herokuapp.com/vehiculos/' };
             await axios
                 .request(options)
                 .then(function (response) {
@@ -102,7 +102,7 @@ const FormularioCreacionVehiculos = ({ setMostrarTabla, listaVehiculos, setVehic
         });
         const options = {
             method: 'POST',
-            url: 'https://lit-caverns-69036.herokuapp.com//vehiculos/nuevo/',
+            url: 'https://lit-caverns-69036.herokuapp.com/vehiculos/nuevo/',
             headers: { 'content-type': 'application/json' },
             data: { name: nuevoVehiculo.name, marca: nuevoVehiculo.marca },
         };
